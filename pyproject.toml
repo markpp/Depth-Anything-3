@@ -7,7 +7,7 @@ name = "depth-anything-3"
 version = "0.0.0"
 description = "Depth Anything 3"
 readme = "README.md"
-requires-python = ">=3.9, <=3.13"
+requires-python = ">=3.9, <=3.14"
 license = { text = "Apache-2.0" }
 authors = [{ name = "Your Name" }]
 
@@ -22,7 +22,6 @@ dependencies = [
     "numpy<2",
     "opencv-python",
     "xformers",
-    "open3d",
     "fastapi",
     "uvicorn",
     "requests",
@@ -74,7 +73,7 @@ plugins = ["jaxtyping.mypy_plugin"]
 
 [tool.black]
 line-length = 99
-target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311', 'py312', 'py313']
 include = '\.pyi?$'
 exclude = '''
 /(
